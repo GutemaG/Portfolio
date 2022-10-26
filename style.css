@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.headline-wrapper {
+  max-width: 375px;
+  height: 718px;
+  background-image: url("header-shapes-mobile.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline-container {
+  margin: 24px;
+}
+
+.headline-name {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.about-myself {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+}
+
+.social-media h2 {
+  color: #7f8cff;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
