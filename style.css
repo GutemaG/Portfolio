@@ -3,7 +3,7 @@
 }
 
 .header {
-  max-width: 375px;
+  /* max-width: 375px; */
   display: flex;
   justify-content: space-between;
 }
@@ -22,13 +22,12 @@
 }
 
 .headline-wrapper {
-  max-width: 375px;
-  height: 718px;
   background-image: url("header-shapes-mobile.png");
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .headline-container {
@@ -38,6 +37,9 @@
 .headline-name {
   font-size: 40px;
   line-height: 52px;
+  color: #172B4D;
+  display: flex;
+  align-items: center;
 }
 
 .about-myself {
