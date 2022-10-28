@@ -252,6 +252,11 @@
   grid-template-columns: 5fr 1fr;
   width: 100%;
 }
+.title-arrow {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  width: 100%;
+}
 
 .language-title > span {
   font-weight: 500;
