@@ -247,17 +247,14 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-}
-
-.language-title {
-  display: grid;
-  grid-template-columns: 5fr 1fr;
-  width: 100%;
+  justify-content: center;
+  gap: 12px;
 }
 
 .title-arrow {
-  display: grid;
-  grid-template-columns: 5fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
   width: 100%;
 }
 
@@ -267,12 +264,19 @@
   line-height: 24px;
   color: #000;
   height: 24px;
+  margin: 12px;
+}
+
+.langauge-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0 9px 9px;
 }
 
 .separator {
   border: 34px;
   background: #dfe1e6;
-  color: red;
 }
 
 .language-wrapper {
@@ -333,6 +337,11 @@
   gap: 16px;
 }
 
+.frameworks,
+.skill {
+  border-bottom: 1px solid #dfe1e6;
+}
+
 .framework {
   display: flex;
   border-radius: 8px;
@@ -351,7 +360,7 @@
 .skill-list {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   gap: 16px;
@@ -379,9 +388,3 @@
   color: #5e6c84;
   border: 1px solid #c1c7d0;
 }
-
-/*
-TODO
-* BUtton hover
-* buttton size
-*/
