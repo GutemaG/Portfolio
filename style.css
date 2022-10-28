@@ -221,12 +221,14 @@
   align-items: center;
   color: #172b4d;
 }
+
 .lets-connect {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
 }
+
 .about-description {
   font-style: normal;
   font-weight: 400;
@@ -252,6 +254,7 @@
   grid-template-columns: 5fr 1fr;
   width: 100%;
 }
+
 .title-arrow {
   display: grid;
   grid-template-columns: 5fr 1fr;
