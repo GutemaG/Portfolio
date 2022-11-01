@@ -396,3 +396,82 @@ body {
   color: #5e6c84;
   border: 1px solid #c1c7d0;
 }
+
+.contact-me {
+  background: #6070ff;
+  border-top-left-radius: 70px;
+  background-image: url("assets/images/contact-form\ shapes-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me-header {
+  margin-top: 104px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-me-description-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 87px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 45px;
+  gap: 20px;
+}
+
+.form-input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin: 0 24px;
+  padding: 15px 38px 15px 16px;
+  outline: none;
+}
+
+form > input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.submit-btn {
+  padding: 12px 16px 12px 16px;
+  background: #fff;
+  border-radius: 8px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  border: none;
+
+  /* margin:auto; */
+  width: 140px;
+  margin: 12px 0 0 24px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.footer-indicator {
+  width: 134px;
+  border-top: 5px solid #0d151e;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
