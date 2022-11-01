@@ -468,3 +468,10 @@ form > input::placeholder {
   font-size: 17px;
   line-height: 24px;
 }
+
+.footer-indicator {
+  width: 134px;
+  border-top: 5px solid #0d151e;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
