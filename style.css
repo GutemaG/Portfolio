@@ -1,16 +1,21 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: #fff;
+  background: #f7f7f9;
 }
 
 .header {
   /* max-width: 375px; */
   display: flex;
   justify-content: space-between;
+  padding: 0 12px;
+  background-color: #fff;
+  align-items: center;
 }
 
 .logo {
@@ -19,26 +24,27 @@ body {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
+  padding: 12px;
 }
 
-.menu-icon {
+.menu-icon-wrapper {
   border: none;
-  background-color: transparent;
+  background-color: #fff;
+  background: none;
 }
 
 .headline-wrapper {
   background-image: url("header-shapes-mobile.png");
   background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 12px;
   border-bottom-left-radius: 70px;
-}
-
-.headline-container {
-  margin: 24px;
+  background-color: #fff;
+  padding: 114px 24px;
 }
 
 .headline-name {
@@ -47,7 +53,7 @@ body {
   color: #172b4d;
   display: flex;
   align-items: center;
-  margin-top: 160px;
+  font-weight: 700;
 }
 
 .about-myself {
@@ -60,6 +66,8 @@ body {
   color: #7f8cff;
   display: flex;
   flex-direction: column;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
 .social-icon {
@@ -68,14 +76,6 @@ body {
   gap: 15px;
   margin: 0;
   padding: 0;
-}
-
-.main {
-  background: #f7f7f9;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  padding: 5px;
 }
 
 .works {
@@ -97,16 +97,29 @@ body {
   border-radius: 16px;
 }
 
-.portfolio-snapshoot {
+.left-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 12px;
+}
+
+.portfolio-snapshot {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.portfolio-snapshoot > img {
-  width: 295px;
-  height: 220px;
+.portfolio-snapshot img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.portfolio-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .portfolio-title {
@@ -175,7 +188,6 @@ body {
 
 .actions {
   display: flex;
-  cursor: pointer;
   gap: 12px;
 }
 
@@ -209,8 +221,6 @@ body {
   border-top: 50px;
   background-color: #fff;
   border-top-right-radius: 70px;
-  padding-left: 36px;
-  padding-right: 36px;
 }
 
 .top {
@@ -234,7 +244,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+
+  /* color: #7f8cff; */
 }
 
 .about-description {
@@ -243,6 +254,12 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .resume-btn {
@@ -256,13 +273,13 @@ body {
   align-items: flex-start;
   padding: 0;
   justify-content: center;
-  gap: 12px;
+
+  /* gap: 12px; */
 }
 
 .title-arrow {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
   width: 100%;
 }
 
@@ -295,9 +312,10 @@ body {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 16px;
+  padding: 12px;
+  gap: 12px;
+
+  /* margin: 0; */
 }
 
 .language {
@@ -365,13 +383,21 @@ body {
   width: 100%;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
 .skill-list {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 16px;
+  width: 100%;
+  gap: 24px;
 }
 
 .skill-title > span {
