@@ -106,6 +106,7 @@ nav .menu li {
   background: #fff;
   background-image: url("header-shapes-mobile.png");
   background-repeat: no-repeat;
+  /* background-position: center; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -430,4 +431,95 @@ form > input::placeholder {
   left: 120px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  .headline-container {
+    background-image: url("assets/images/header-bg.png");
+    background-size: contain;
+    padding: 289px 260px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1140px) {
+    .headline-container {
+      background-position: 50%;
+    }
+  }
+
+  .works {
+    gap: 142px;
+  }
+
+  .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .card {
+    flex-direction: row;
+    gap: 22px;
+    justify-content: center;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about {
+    flex-direction: row;
+    padding: 142px;
+    justify-content: center;
+  }
+
+  .about .top {
+    gap: 24px;
+  }
+
+  .about .skill-list {
+    width: 100%;
+  }
+
+  .language-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .language {
+    flex-direction: column;
+  }
+
+  .language-list {
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    gap: 24px;
+  }
+
+  .footer-indicator {
+    display: none;
+  }
+
+  .contact-me-description-text {
+    width: 50%;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .submit-btn {
+    align-self: center;
+  }
 }
