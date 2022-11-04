@@ -139,9 +139,13 @@ nav .menu li:hover {
   color: var(--leading-text);
   display: flex;
   align-items: center;
-
   position: relative;
   animation: drop-down 2s forwards;
+  transition: border 50ms ease-in;
+}
+
+.headline-container .headline-name:hover {
+  border-bottom: 2px solid var(--primary);
 }
 
 @keyframes drop-down {
@@ -212,6 +216,17 @@ nav .menu li:hover {
 .card img {
   width: 295px;
   height: 220px;
+  position: relative;
+  animation: left-to-right 2s forwards;
+}
+
+@keyframes left-to-right {
+  from {
+    left: -1000px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
 .left-block {
