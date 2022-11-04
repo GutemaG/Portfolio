@@ -73,8 +73,13 @@ nav .logo {
   line-height: 20px;
   text-align: center;
   color: var(--primary);
+  transition: all 300ms ease-in;
 }
 
+.logo:hover {
+  font-weight: bold;
+  transform: scale(1.5);
+}
 nav .menu {
   display: none;
   align-items: center;
@@ -100,6 +105,17 @@ nav .menu {
 
 nav .menu li {
   padding: 10px 12px;
+  transition: all 300ms ease-in-out;
+}
+
+nav .menu li a:hover {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+nav .menu li:hover {
+  border-bottom: 0.5px solid var(--primary);
+  border-top: 0.5px solid var(--primary);
 }
 
 .headline-container {
@@ -123,11 +139,35 @@ nav .menu li {
   color: var(--leading-text);
   display: flex;
   align-items: center;
+
+  position: relative;
+  animation: drop-down 2s forwards;
+}
+
+@keyframes drop-down {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 .headline-container .about-myself {
   font-weight: 400;
   color: var(--text-color);
+
+  position: relative;
+  animation: pop-from-right 2s forwards;
+}
+
+@keyframes pop-from-right {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 .lets-connect {
