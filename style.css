@@ -28,6 +28,10 @@ li {
   color: var(--leading-text);
 }
 
+.btn {
+  transition: all 400ms ease-in;
+}
+
 .btn:hover {
   color: #fff;
   background: var(--primary);
